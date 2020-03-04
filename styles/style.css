@@ -1,6 +1,6 @@
 /** CSS STYLE **/
 body {
-  width: 100%;
+  width: 1000px;
 }
 
 header {
@@ -8,6 +8,7 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
 }
 
 #logo_titul, #menu {
@@ -42,4 +43,16 @@ header {
 #btn_first_block {
   border-radius: 4px;
   background-color: transparent;
+}
+
+#first_section {
+  display: flex;
+}
+
+#second_section {
+  display: flex;
+}
+
+#third_section {
+  display: flex;
 }
