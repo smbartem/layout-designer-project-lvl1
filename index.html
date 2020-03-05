@@ -27,7 +27,7 @@
             <img src="images/logo.svg" alt="logo" id="logo_first_block">
             <h1>ЖК «Лунное море»</h1>
             <p>Место, откуда не хочется улетать</p>
-            <button id="btn_first_block"><a href="#">Забронировать</a></button>
+            <button id="btn_first_block"><a href="#form">Забронировать</a></button>
         </div>
         <section id="first_section">
             <div id="unic_view">
@@ -87,6 +87,41 @@
                 </p>
             </div>
         </section>
+        <div>
+            <h1>Оставьте зааявку сегодня!</h1>
+            <form action="#" method="GET" id="form">
+                <fieldset>
+                    <legend>Параметры квартиры</legend>
+                    <div>
+                        <label>Количество комнат:</label>
+                        <select name="qtyRooms" size="1">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label>Отделка:</label>
+                        <select name="repairs" size="1">
+                            <option value="without repairs">Без отделки</option>
+                            <option value="econom">Эконом</option>
+                            <option value="comfort">Комфорт</option>
+                            <option value="business">Бизнес</option>
+                        </select>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Контактная информация</legend>
+                    <label for="name">Имя:</label>
+                    <input type="text" name="name" id="name" required>
+                    <label for="tel">Телефон:</label>
+                    <input type="tel" name="tel" id="tel" required pattern="+7-[0-9]-[0-9]">
+                    <label for="e-mail">E-mail</label>
+                    <input type="email" name="e-mail" id="e-mail">
+                </fieldset>
+                <input type="submit" value="Отправить">
+            </form>
+        </div>
     </main>
     <footer>
         Footer
