@@ -56,3 +56,7 @@ header {
 #third_section {
   display: flex;
 }
+
+footer {
+  display: flex;
+}
