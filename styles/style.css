@@ -1,6 +1,21 @@
 /** CSS STYLE **/
 body {
-  width: 1000px;
+  width: 1100px;
+}
+
+body, a, select, input {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.fixHeader {
+  position: fixed;
+  background-color: white;
+  width: 1100px;
 }
 
 header {
@@ -9,54 +24,210 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  
+   
 }
 
-#logo_titul, #menu {
+.logoTitul, .menu {
   padding-left: 10px;
   padding-right: 10px;
   display: flex;
   align-items: center;
+  font-weight: bold;
 }
 
-#logo_header {
+.menu a {
+  font-weight: bold;
+  color: black;
+  margin: 0 10px; 
+}
+
+.menu a:hover {
+  color: #2c3e50; 
+  border: 1px #2c3e50 solid;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.logoHeader {
   height: 50px;
   width: 50px;
+  margin-right: 10px;
 }
 
-#first_block {
+.firstBlock {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: url(../images/banner.png) no-repeat bottom left;
+  background: url(../images/banner.png) no-repeat 40% 65%;
+  height: 350px;
   color: white;
-  width: 100%;
-  height: 400px;
-  
+  padding: 90px 0px 0px 0px;
+  margin: 0px;
 }
 
-#logo_first_block {
-  height: 100px;
-  width: 100px;
+.logoFirstBlock {
+  height: 70px;
+  width: 70px;
 }
 
-#btn_first_block {
-  border-radius: 4px;
+.firstBlock p {
+  margin-top: -10px;
+}
+
+.btnFirstBlock {
+  border-radius: 10px;
   background-color: transparent;
+  border: 1px white solid;
+  text-align: center;
+  padding: 10px;  
 }
 
-#first_section {
-  display: flex;
+.btnFirstBlock:hover {
+  border: 1px #2c3e50 solid;
+  background-color:rgb(0, 0, 0, 0.6);
+  color: black;
 }
 
-#second_section {
-  display: flex;
+.btnFirstBlock a {
+  color: white;
+  font-weight: bold;
 }
 
-#third_section {
+.firstSection {
+  height: 250px;
   display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.firstSection div {
+  width: 30%;
+
+}
+
+.secondSection, .thirdSection {
+  height: 300px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.aboutInf, .restInf {
+  width: 350px;
+}
+
+.moon {
+  width: 300px;
+  height: 200px;
+}
+
+.whiteSmoke {
+  background-color: whitesmoke;
+}
+
+.feedback {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  width: 400px;
+}
+
+legend {
+  color: #0ae897;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.aboutFlatForm {
+  border: 3px #0ae897 solid;
+}
+
+.contactInf {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 3px #0ae897 solid;
+}
+
+.formButton {
+  border-radius: 10px;
+  border: 1px #0ae897 solid;
+  text-align: center;
+  padding: 10px 15px;   
+  color: #0ae897;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.formButton:hover {
+  color: white;
+  background-color: #0ae897;
+}
+
+.aboutFlatForm select {
+  border-radius: 10px;
+  width: 140px;
+  height: 25px;
+}
+
+.qtyRooms {
+  margin: 10px 70px 5px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.repairs {
+  margin: 10px 70px 10px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contactInf input {
+  border-radius: 10px;
+  width: 200px;
+  height: 25px;
+}
+
+.contactInfName {
+  margin: 10px 40px 10px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contactInfTel {
+  margin: 10px 40px 10px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contactInfEmail {
+  margin: 10px 40px 10px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 footer {
+  background-color: #2c3e50;
+  height: 200px;
+  color: white ;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.logoCompany {
   display: flex;
 }

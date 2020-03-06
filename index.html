@@ -11,33 +11,35 @@
 </head>
 
 <body>
-    <header>
-        <div id="logo_titul">
-            <img src="images/logo.svg" alt="logo" id="logo_header">
-            <p>Лунное море</p>
-        </div>
-        <div id="menu">
-            <p>Преимущества</p>
-            <p>О ЖК</p>
-            <p>Места для отдыха</p>
-        </div>
-    </header>
+    <div class="fixHeader">
+        <header>
+            <div class="logoTitul">
+                <img src="images/logo.svg" alt="logo" class="logoHeader">
+                <p>Лунное море</p>
+            </div>
+            <div class="menu">
+                <p><a href="#firstSection">Преимущества</a></p>
+                <p><a href="#aboutInf">О ЖК</a></p>
+                <p><a href="#restInf">Места для отдыха</a></p>
+            </div>
+        </header>
+    </div>
     <main>
-        <div id="first_block">
-            <img src="images/logo.svg" alt="logo" id="logo_first_block">
+        <div class="firstBlock">
+            <img src="images/logo.svg" alt="logo" class="logoFirstBlock">
             <h2>ЖК «Лунное море»</h2>
             <p>Место, откуда не хочется улетать</p>
-            <button id="btn_first_block"><a href="#form">Забронировать</a></button>
+            <button class="btnFirstBlock"><a href="#form">Забронировать</a></button>
         </div>
-        <section id="first_section">
-            <div id="unic_view">
+        <section class="firstSection" id="firstSection">
+            <div>
                 <h2>Уникальный вид</h2>
                 <p>
                     Вид на космос из вашего окна. Мы построили дома с большими окнами,
                     чтобы вы могли наслаждаться метеоритными потоками.
                 </p>
             </div>
-            <div id="infrastructure">
+            <div>
                 <h2>Инфраструктура</h2>
                 <p>
                     Прекрасные дороги рядом с домом. Много мест для прогулки. Всего в 200
@@ -45,7 +47,7 @@
                     провести незабываемые выходные.
                 </p>
             </div>
-            <div id="proximity">
+            <div>
                 <h2>Близость к Москве</h2>
                 <p>
                     При небольшой цене мы располагаемся близко к МКАД. Всего 384 000 километров
@@ -53,8 +55,8 @@
                 </p>
             </div>
         </section>
-        <section id="second_section">
-            <div id="about_inf">
+        <section class="secondSection whiteSmoke">
+            <div class="aboutInf" id="aboutInf">
                 <h2>О ЖК «Лунное море»</h2>
                 <p>
                     Все чаще жители Москвы предпочитают загородный дом городской квартире, к тому
@@ -66,15 +68,15 @@
                     километров от Земли.
                 </p>
             </div>
-            <div id="about_pic">
-                <img src="images/moon-1.jpg" alt="moon-1" id="moon-1">
+            <div>
+                <img src="images/moon-1.jpg" alt="moon1" class="moon">
             </div>
         </section>
-        <section id="third_section">
-            <div id="rest_pic">
-                <img src="images/moon-2.jpg" alt="moon-2" id="moon-2">
+        <section class="thirdSection">
+            <div>
+                <img src="images/moon-2.jpg" alt="moon2" class="moon">
             </div>
-            <div id="rest_inf">
+            <div class="restInf" id="restInf">
                 <h2>Места для отдыха</h2>
                 <p>
                     Луна обладает всеми условиями для комфортного отдыха от большого города. В
@@ -87,12 +89,12 @@
                 </p>
             </div>
         </section>
-        <div>
-            <h2>Оставьте зааявку сегодня!</h2>
+        <div class="whiteSmoke feedback">
+            <h2>Оставьте заявку сегодня!</h2>
             <form action="#" method="GET" id="form">
-                <fieldset>
+                <fieldset class="aboutFlatForm">
                     <legend>Параметры квартиры</legend>
-                    <div>
+                    <div class="qtyRooms">
                         <label>Количество комнат:</label>
                         <select name="qtyRooms" size="1">
                             <option value="1">1</option>
@@ -100,7 +102,7 @@
                             <option value="3">3</option>
                         </select>
                     </div>
-                    <div>
+                    <div class="repairs">
                         <label>Отделка:</label>
                         <select name="repairs" size="1">
                             <option value="without repairs">Без отделки</option>
@@ -110,23 +112,31 @@
                         </select>
                     </div>
                 </fieldset>
-                <fieldset>
+                <fieldset class="contactInf">
                     <legend>Контактная информация</legend>
-                    <label for="name">Имя:</label>
-                    <input type="text" name="name" id="name" required>
-                    <label for="tel">Телефон:</label>
-                    <input type="tel" name="tel" id="tel" required pattern="+7-[0-9]-[0-9]">
-                    <label for="e-mail">E-mail</label>
-                    <input type="email" name="e-mail" id="e-mail">
+                    <div class="contactInfName">
+                        <label for="name">Имя:</label>
+                        <input type="text" name="name" id="name" required>
+                    </div>
+                    <div class="contactInfTel">
+                        <label for="tel">Телефон:</label>
+                        <input type="tel" name="tel" id="tel" required pattern="+7-[0-9]-[0-9]">
+                    </div>
+                    <div class="contactInfEmail">
+                        <label for="e-mail">E-mail</label>
+                        <input type="email" name="e-mail" id="e-mail">
+                    </div>
                 </fieldset>
-                <input type="submit" value="Отправить">
+                <input type="submit" value="Отправить" class="formButton">
             </form>
         </div>
     </main>
     <footer>
         <div>
-            <img src="images/logo.svg" alt="logo" id="logo_header">
-            <p>Лунное море</p>
+            <div class="logoCompany">
+                <img src="images/logo.svg" alt="logo" class="logoHeader">
+                <p>Лунное море</p>
+            </div>
             <p>&copy; 2032 год</p>
         </div>
         <div>
