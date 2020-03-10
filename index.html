@@ -11,37 +11,37 @@
 </head>
 
 <body>
-    <div class="fixHeader">
-        <header>
-            <div class="logoTitul">
-                <img src="images/logo.svg" alt="logo" class="logoHeader">
+    <div class="header-position-fix">
+        <header class="header-main flex-space-between-center">
+            <div class="logo-title">
+                <img src="images/logo.svg" alt="logo" class="logo-header">
                 <p>Лунное море</p>
             </div>
             <div class="menu">
-                <p><a href="#firstSection">Преимущества</a></p>
-                <p><a href="#aboutInf">О ЖК</a></p>
-                <p><a href="#restInf">Места для отдыха</a></p>
+                <a href="#features-section" class="menu-link">Преимущества</a>
+                <a href="#about-info" class="menu-link">О ЖК</a>
+                <a href="#rest-info" class="menu-link">Места для отдыха</a>
             </div>
         </header>
     </div>
     <main>
-        <div class="firstBlock">
-            <img src="images/logo.svg" alt="logo" class="logoFirstBlock">
-            <h2>ЖК «Лунное море»</h2>
+        <div class="advertising-block">
+            <img src="images/logo.svg" alt="logo-advertising-block" class="logo-advertising-block">
+            <h2 class="advertising-block-h2">ЖК «Лунное море»</h2>
             <p>Место, откуда не хочется улетать</p>
-            <button class="btnFirstBlock"><a href="#form">Забронировать</a></button>
+            <button class="btn-advertising-block"><a href="#form">Забронировать</a></button>
         </div>
-        <section class="firstSection" id="firstSection">
+        <section class="features-section" id="features-section">
             <div>
                 <h2>Уникальный вид</h2>
-                <p>
+                <p class="text-align-justify">
                     Вид на космос из вашего окна. Мы построили дома с большими окнами,
                     чтобы вы могли наслаждаться метеоритными потоками.
                 </p>
             </div>
             <div>
                 <h2>Инфраструктура</h2>
-                <p>
+                <p class="text-align-justify">
                     Прекрасные дороги рядом с домом. Много мест для прогулки. Всего в 200
                     км. от посёлка находится кольцо гор Кордильеры, на которых вы сможете
                     провести незабываемые выходные.
@@ -49,21 +49,21 @@
             </div>
             <div>
                 <h2>Близость к Москве</h2>
-                <p>
+                <p class="text-align-justify">
                     При небольшой цене мы располагаемся близко к МКАД. Всего 384 000 километров
                     и вы в самом сердце России.
                 </p>
             </div>
         </section>
-        <section class="secondSection whiteSmoke">
-            <div class="aboutInf" id="aboutInf">
+        <section class="info-section">
+            <div class="about-info" id="about-info">
                 <h2>О ЖК «Лунное море»</h2>
-                <p>
+                <p class="text-align-justify">
                     Все чаще жители Москвы предпочитают загородный дом городской квартире, к тому
                     же связь с мегаполисом не теряется – современные скоростные трассы позволяют
                     без труда добираться до столицы и обратно.
                 </p>
-                <p>
+                <p class="text-align-justify">
                     Мы построили наши дома на самом близком к Солнцу спутнике, всего в 380 тысяч
                     километров от Земли.
                 </p>
@@ -72,69 +72,69 @@
                 <img src="images/moon-1.jpg" alt="moon1" class="moon">
             </div>
         </section>
-        <section class="thirdSection">
+        <section class="places-to-rest-section">
             <div>
                 <img src="images/moon-2.jpg" alt="moon2" class="moon">
             </div>
-            <div class="restInf" id="restInf">
+            <div class="rest-info" id="rest-info">
                 <h2>Места для отдыха</h2>
-                <p>
+                <p class="text-align-justify">
                     Луна обладает всеми условиями для комфортного отдыха от большого города. В
                     вашем распоряжении 22 моря и 18 гор. Самое ближайшее кольцо гор всего в 200
                     километров от вашей квартиры.
                 </p>
-                <p>
+                <p class="text-align-justify">
                     Дома располагаются в новом районе «Лунные моря». При необходимости есть
                     автобусы до района «Лунный материк».
                 </p>
             </div>
         </section>
-        <div class="whiteSmoke feedback">
+        <div class="feedback-block">
             <h2>Оставьте заявку сегодня!</h2>
-            <form action="#" method="GET" id="form">
-                <fieldset class="aboutFlatForm">
-                    <legend>Параметры квартиры</legend>
-                    <div class="qtyRooms">
+            <form action="#" method="GET" id="form" class="feedback-block-form">
+                <fieldset class="feedback-flat-form">
+                    <legend class="feedback-form-title">Параметры квартиры</legend>
+                    <div class="feedback-qty-rooms flex-space-between-center">
                         <label>Количество комнат:</label>
-                        <select name="qtyRooms" size="1">
+                        <select name="feedback-qty-rooms" size="1">
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
                         </select>
                     </div>
-                    <div class="repairs">
+                    <div class="feedback-repairs flex-space-between-center">
                         <label>Отделка:</label>
-                        <select name="repairs" size="1">
-                            <option value="without repairs">Без отделки</option>
+                        <select name="feedback-repairs" size="1">
+                            <option value="without-repairs">Без отделки</option>
                             <option value="econom">Эконом</option>
                             <option value="comfort">Комфорт</option>
                             <option value="business">Бизнес</option>
                         </select>
                     </div>
                 </fieldset>
-                <fieldset class="contactInf">
-                    <legend>Контактная информация</legend>
-                    <div class="contactInfName">
+                <fieldset class="feedback-contact-info">
+                    <legend class="feedback-form-title">Контактная информация</legend>
+                    <div class="feedback-contact-info-name flex-space-between-center">
                         <label for="name">Имя:</label>
                         <input type="text" name="name" id="name" required>
                     </div>
-                    <div class="contactInfTel">
+                    <div class="feedback-contact-info-tel flex-space-between-center">
                         <label for="tel">Телефон:</label>
                         <input type="tel" name="tel" id="tel" required pattern="+7-[0-9]-[0-9]">
                     </div>
-                    <div class="contactInfEmail">
+                    <div class="feedback-contact-info-email flex-space-between-center">
                         <label for="e-mail">E-mail</label>
                         <input type="email" name="e-mail" id="e-mail">
                     </div>
                 </fieldset>
-                <input type="submit" value="Отправить" class="formButton">
+                <input type="submit" value="Отправить" class="form-button">
             </form>
         </div>
     </main>
     <footer>
         <div>
-            <div class="logoCompany">
-                <img src="images/logo.svg" alt="logo" class="logoHeader">
+            <div class="logo-company">
+                <img src="images/logo.svg" alt="logo" class="logo-header">
                 <p>Лунное море</p>
             </div>
             <p>&copy; 2032 год</p>
