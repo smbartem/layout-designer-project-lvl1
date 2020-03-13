@@ -1,8 +1,12 @@
 /** CSS STYLE **/
 body {
-  width: 1100px;
   margin: 0 auto;
   padding: 0;
+  height: 100%;
+  display: flex; 
+  flex-direction: column; 
+  height: 100%; 
+  height: -webkit-fill-available;
 }
 
 body, a, select, input {
@@ -15,12 +19,16 @@ body, a, select, input {
 .header-position-fix {
   position: fixed;
   background-color: white;
-  width: inherit;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .header-main {
   height: 70px;
   padding: 0 10px;
+  width: 1000px;
 }
 
 .logo-title, .menu {
@@ -51,6 +59,7 @@ body, a, select, input {
   flex-direction: column;
   align-items: center;
   background: url(../images/banner.png) no-repeat 40% 65%;
+  background-size: 100%;
   color: white;
   padding: 140px 0;
   margin: 0px;
@@ -84,11 +93,17 @@ body, a, select, input {
   font-weight: bold;
 }
 
+.content {
+ flex: 0 0 auto; 
+}
+
 .features-section {
   padding: 50px 0;
   display: flex;
   justify-content: space-around;
   align-items: baseline;
+  width: 1000px;
+  margin: 0 auto;
 }
 
 .features-section div {
@@ -96,11 +111,17 @@ body, a, select, input {
 
 }
 
+.info-section-background-color {
+  background-color: whitesmoke;
+}
+
 .info-section, .places-to-rest-section {
   padding: 50px 50px;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  width: 1000px;
+  margin: 0 auto;
 }
 
 .info-section {
@@ -161,10 +182,12 @@ body, a, select, input {
   background-color: #0ae897;
 }
 
-.about-flatForm select {
+.feedback-flat-form select {
   border-radius: 10px;
   width: 140px;
-  height: 25px;
+  height: 30px;
+  border: 1px solid lightgray;
+  padding-left: 7px;
 }
 
 .feedback-qty-rooms {
@@ -196,19 +219,22 @@ body, a, select, input {
 
 footer {
   background-color: #2c3e50;
+  flex: 1 0 auto;
+}
+
+.footer-content {
+  width: 1000px;
+  background-color: #2c3e50;
   padding: 30px 0;
   color: white ;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  margin: auto;
 }
 
 .logo-company {
   display: flex;
-}
-
-.text-align-justify {
-  text-align: justify;
 }
 
 .flex-space-between-center {
