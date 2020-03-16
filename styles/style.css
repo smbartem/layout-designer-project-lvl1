@@ -3,15 +3,11 @@ body {
   margin: 0 auto;
   padding: 0;
   height: 100%;
-  display: flex; 
-  flex-direction: column; 
-  height: 100%; 
-  height: -webkit-fill-available;
 }
 
 body, a, select, input {
   font-family: Arial, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   text-decoration: none;
 }
@@ -20,6 +16,7 @@ body, a, select, input {
   position: fixed;
   background-color: white;
   width: 100%;
+  position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -28,7 +25,7 @@ body, a, select, input {
 .header-main {
   height: 70px;
   padding: 0 10px;
-  width: 1000px;
+  flex: 0 0 1000px;
 }
 
 .logo-title, .menu {
@@ -54,7 +51,7 @@ body, a, select, input {
   margin-right: 10px;
 }
 
-.advertising-block {
+.advertising-section {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -65,16 +62,16 @@ body, a, select, input {
   margin: 0px;
 }
 
-.logo-advertising-block {
+.logo-advertising-section {
   height: 100px;
   width: 100px;
 }
 
-.advertising-block-h2 {
+.advertising-section-h2 {
   margin-bottom: 0px;
 }
 
-.btn-advertising-block {
+.btn-advertising-section {
   border-radius: 10px;
   background-color: transparent;
   border: 1px white solid;
@@ -82,19 +79,15 @@ body, a, select, input {
   cursor: pointer;
 }
 
-.btn-advertising-block:hover {
+.btn-advertising-section:hover {
   border: 1px #2c3e50 solid;
-  background-color:rgb(0, 0, 0, 0.6);
+  background-color:rgb(255,255,255, 0.6);
   color: black;
 }
 
-.btn-advertising-block {
+.btn-advertising-section {
   color: white;
   font-weight: bold;
-}
-
-.content {
- flex: 0 0 auto; 
 }
 
 .features-section {
@@ -152,7 +145,7 @@ body, a, select, input {
 
 .feedback-form-title {
   color: #0ae897;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
 }
 
@@ -219,7 +212,6 @@ body, a, select, input {
 
 footer {
   background-color: #2c3e50;
-  flex: 1 0 auto;
 }
 
 .footer-content {
