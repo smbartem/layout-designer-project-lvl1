@@ -11,34 +11,34 @@
 </head>
 
 <body>
-    <header class="header-main flex-space-between-center">
-        <div class="logo-title">
+    <header class="header-main flex-space-between">
+        <div class="logo-title flex-align-items-center">
             <img src="images/logo.svg" alt="logo" class="logo-header">
             <p>Лунное море</p>
         </div>
-        <div class="menu">
+        <nav class="menu flex-align-items-center">
             <a href="#features-section" class="menu-link">Преимущества</a>
             <a href="#about-info" class="menu-link">О ЖК</a>
             <a href="#rest-info" class="menu-link">Места для отдыха</a>
-        </div>
+        </nav>
     </header>
 
-    <main class="main">
-        <div class="advertising-section">
-            <img src="images/logo.svg" alt="logo-advertising-section" class="logo-advertising-section">
-            <h2 class="advertising-section-h2">ЖК «Лунное море»</h2>
+    <main class="padding-top-h-h">
+        <div class="advertising-section flex-column-all-center">
+            <img src="images/logo.svg" alt="logo-advertising-section" class="width-100">
+            <h2 class="m-b-0">ЖК «Лунное море»</h2>
             <p>Место, откуда не хочется улетать</p>
-            <a class="btn-advertising-section" href="#form">Забронировать</a>
+            <a class="button advertising-section-button" href="#form">Забронировать</a>
         </div>
         <section class="features-section" id="features-section">
-            <div>
+            <div class="width-250">
                 <h2>Уникальный вид</h2>
                 <p>
                     Вид на космос из вашего окна. Мы построили дома с большими окнами,
                     чтобы вы могли наслаждаться метеоритными потоками.
                 </p>
             </div>
-            <div>
+            <div class="width-250">
                 <h2>Инфраструктура</h2>
                 <p>
                     Прекрасные дороги рядом с домом. Много мест для прогулки. Всего в 200
@@ -46,7 +46,7 @@
                     провести незабываемые выходные.
                 </p>
             </div>
-            <div>
+            <div class="width-250">
                 <h2>Близость к Москве</h2>
                 <p>
                     При небольшой цене мы располагаемся близко к МКАД. Всего 384 000 километров
@@ -54,9 +54,9 @@
                 </p>
             </div>
         </section>
-        <section class="info-section-background-color">
-            <div class="info-section">
-                <div class="about-info" id="about-info">
+        <section class="info-feedback-background-color">
+            <div class="info-section flex-space-around">
+                <div class="width-450" id="about-info">
                     <h2>О ЖК «Лунное море»</h2>
                     <p>
                         Все чаще жители Москвы предпочитают загородный дом городской квартире, к тому
@@ -73,11 +73,11 @@
                 </div>
             </div>
         </section>
-        <section class="places-to-rest-section">
+        <section class="places-to-rest-section flex-space-around">
             <div>
                 <img src="images/moon-2.jpg" alt="moon2" class="moon">
             </div>
-            <div class="rest-info" id="rest-info">
+            <div class="width-450" id="rest-info">
                 <h2>Места для отдыха</h2>
                 <p>
                     Луна обладает всеми условиями для комфортного отдыха от большого города. В
@@ -90,12 +90,12 @@
                 </p>
             </div>
         </section>
-        <div class="feedback-block">
+        <div class="feedback-block flex-column-all-center info-feedback-background-color">
             <h2>Оставьте заявку сегодня!</h2>
             <form action="#" method="GET" id="form" class="feedback-block-form">
                 <fieldset class="feedback-flat-form">
                     <legend class="feedback-form-title">Параметры квартиры</legend>
-                    <div class="feedback-qty-rooms flex-space-between-center">
+                    <div class="feedback-qty-rooms flex-space-between">
                         <label>Количество комнат:</label>
                         <select name="feedback-qty-rooms" size="1">
                             <option value="1">1</option>
@@ -103,7 +103,7 @@
                             <option value="3">3</option>
                         </select>
                     </div>
-                    <div class="feedback-repairs flex-space-between-center">
+                    <div class="feedback-repairs flex-space-between">
                         <label>Отделка:</label>
                         <select name="feedback-repairs" size="1">
                             <option value="without-repairs">Без отделки</option>
@@ -115,25 +115,25 @@
                 </fieldset>
                 <fieldset class="feedback-contact-info">
                     <legend class="feedback-form-title">Контактная информация</legend>
-                    <div class="feedback-contact-info-name flex-space-between-center">
+                    <div class="feedback-contact-info-name flex-space-between">
                         <label for="name">Имя:</label>
                         <input type="text" name="name" id="name" required>
                     </div>
-                    <div class="feedback-contact-info-tel flex-space-between-center">
+                    <div class="feedback-contact-info-tel flex-space-between">
                         <label for="tel">Телефон:</label>
                         <input type="tel" name="tel" id="tel" required pattern="+7-[0-9]-[0-9]">
                     </div>
-                    <div class="feedback-contact-info-email flex-space-between-center">
+                    <div class="feedback-contact-info-email flex-space-between">
                         <label for="e-mail">E-mail</label>
                         <input type="email" name="e-mail" id="e-mail">
                     </div>
                 </fieldset>
-                <input type="submit" value="Отправить" class="form-button">
+                <input type="submit" value="Отправить" class="button form-button">
             </form>
         </div>
     </main>
-    <footer>
-        <div class="footer-content">
+    <footer class="background-blue">
+        <div class="footer-content flex-space-around">
             <div>
                 <div class="logo-company">
                     <img src="images/logo.svg" alt="logo" class="logo-header">

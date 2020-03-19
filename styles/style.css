@@ -1,8 +1,15 @@
 /** CSS STYLE **/
+:root {
+  --header-height: 70px;
+  --feedback-block-color: #0ae897;
+  --form-border-color: lightgray;
+  --footer-background-color: #2c3e50; 
+  --info-feedback-background-color: whitesmoke;
+}
+
 body {
   margin: 0 auto;
   padding: 0;
-  height: 100%;
 }
 
 body, a, select, input {
@@ -13,22 +20,21 @@ body, a, select, input {
 }
 
 .header-main {
-  padding: 10px 10px;
+  padding: 5px 5px;
   position: fixed;
+  top: 0;
+  left: 0;
   background-color: white;
   width: 100%;
+  height: var(--header-height);
 }
 
 .logo-title {
-  display: flex;
-  align-items: center;
   font-weight: bold;
   padding-left: 15px;
 }
 
 .menu {
-  display: flex;
-  align-items: center;
   font-weight: bold;
   padding-right: 20px;
 }
@@ -40,58 +46,51 @@ body, a, select, input {
 }
 
 .menu-link:hover {
-  color: #2c3e50; 
   text-decoration: underline;
 }
 
 .logo-header {
-  height: 50px;
   width: 50px;
   margin-right: 10px;
 }
 
-.main {
-  padding-top: 70px;
+.padding-top-h-h {
+  padding-top: var(--header-height);
 }
 
 .advertising-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   background: url(../images/banner.png) no-repeat 40% 65%;
   background-size: 100%;
   color: white;
-  height: 450px;
+  padding: 40px 0;
   margin: 0px;
 }
 
-.logo-advertising-section {
-  height: 100px;
+.width-100 {
   width: 100px;
 }
 
-.advertising-section-h2 {
+.m-b-0 {
   margin-bottom: 0px;
 }
 
-.btn-advertising-section {
+.button {
   border-radius: 10px;
   background-color: transparent;
-  border: 1px white solid;
   padding: 10px;  
   cursor: pointer;
+  font-weight: bold;
 }
 
-.btn-advertising-section:hover {
-  border: 1px #2c3e50 solid;
+.advertising-section-button {
+  border: 1px white solid;
+  color: white;
+}
+
+.advertising-section-button:hover {
+  border: 1px rgb(255,255,255, 0.6) solid;
   background-color:rgb(255,255,255, 0.6);
   color: black;
-}
-
-.btn-advertising-section {
-  color: white;
-  font-weight: bold;
 }
 
 .features-section {
@@ -103,30 +102,22 @@ body, a, select, input {
   margin: 0 auto;
 }
 
-.features-section div {
+.width-250 {
   width: 250px;
-
 }
 
-.info-section-background-color {
-  background-color: whitesmoke;
+.info-feedback-background-color {
+  background-color: var(--info-feedback-background-color);
 }
 
 .info-section, .places-to-rest-section {
   padding: 50px 50px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   width: 1000px;
   margin: 0 auto;
 }
 
-.info-section {
-  background-color: whitesmoke;
-}
-
-.about-info, .rest-info {
-  width: 455px;
+.width-450 {
+  width: 450px;
 }
 
 .moon {
@@ -136,11 +127,6 @@ body, a, select, input {
 
 .feedback-block {
   padding: 50px 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: whitesmoke;
 }
 
 .feedback-block-form {
@@ -148,42 +134,37 @@ body, a, select, input {
 }
 
 .feedback-form-title {
-  color: #0ae897;
+  color: var(--feedback-block-color);
   font-size: 18px;
   font-weight: bold;
 }
 
 .feedback-flat-form {
-  border: 3px #0ae897 solid;
+  border: 3px var(--feedback-block-color) solid;
   margin-bottom: 20px;
   padding: 20px 10px;
 }
 
 .feedback-contact-info {
-  border: 3px #0ae897 solid;
+  border: 3px var(--feedback-block-color) solid;
 }
 
 .form-button {
-  border-radius: 10px;
-  border: 1px #0ae897 solid;
-  text-align: center;
-  padding: 10px 15px;   
-  color: #0ae897;
-  font-weight: bold;
+  border: 1px var(--feedback-block-color) solid;   
+  color: var(--feedback-block-color);
   margin-top: 10px;
-  cursor: pointer;
 }
 
 .form-button:hover {
   color: white;
-  background-color: #0ae897;
+  background-color: var(--feedback-block-color);
 }
 
 .feedback-flat-form select {
   border-radius: 10px;
   width: 140px;
   height: 30px;
-  border: 1px solid lightgray;
+  border: 1px solid var(--form-border-color);
   padding-left: 7px;
 }
 
@@ -199,7 +180,7 @@ body, a, select, input {
   border-radius: 10px;
   width: 200px;
   height: 25px;
-  border: 1px solid lightgray;
+  border: 1px solid var(--form-border-color);
 }
 
 .feedback-contact-info-name {
@@ -214,18 +195,14 @@ body, a, select, input {
   padding: 0 40px 10px 10px;
 }
 
-footer {
-  background-color: #2c3e50;
+.background-blue {
+  background-color: var(--footer-background-color);
 }
 
 .footer-content {
   width: 1000px;
-  background-color: #2c3e50;
   padding: 30px 0;
   color: white ;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
   margin: auto;
 }
 
@@ -233,8 +210,26 @@ footer {
   display: flex;
 }
 
-.flex-space-between-center {
+.flex-space-between {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.flex-column-all-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-align-items-center {
+  display: flex;
+  align-items: center;
+}
+
+.flex-space-around {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
