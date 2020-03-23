@@ -19,8 +19,13 @@ body, a, select, input {
   text-decoration: none;
 }
 
+.width-1000{
+  width: 1000px;
+}
+
 .header-main {
   padding: 5px 5px;
+  box-sizing: border-box;
   position: fixed;
   top: 0;
   left: 0;
@@ -64,14 +69,20 @@ body, a, select, input {
   color: white;
   padding: 40px 0;
   margin: 0px;
+  font-size: 24px;
 }
 
 .width-100 {
   width: 100px;
 }
 
-.m-b-0 {
-  margin-bottom: 0px;
+.advertising-section-title {
+  margin: 5px 0 0 0;
+  font-size: 48px;
+}
+
+.margin-0 {
+  margin: 0;
 }
 
 .button {
@@ -80,14 +91,16 @@ body, a, select, input {
   padding: 10px;  
   cursor: pointer;
   font-weight: bold;
+  margin-top: 10px;
 }
 
-.advertising-section-button {
+.white-button {
   border: 1px white solid;
   color: white;
+  font-size: 20px;
 }
 
-.advertising-section-button:hover {
+.white-button:hover {
   border: 1px rgb(255,255,255, 0.6) solid;
   background-color:rgb(255,255,255, 0.6);
   color: black;
@@ -95,10 +108,7 @@ body, a, select, input {
 
 .features-section {
   padding: 50px 0;
-  display: flex;
-  justify-content: space-around;
-  align-items: baseline;
-  width: 1000px;
+  
   margin: 0 auto;
 }
 
@@ -112,7 +122,6 @@ body, a, select, input {
 
 .info-section, .places-to-rest-section {
   padding: 50px 50px;
-  width: 1000px;
   margin: 0 auto;
 }
 
@@ -149,13 +158,12 @@ body, a, select, input {
   border: 3px var(--feedback-block-color) solid;
 }
 
-.form-button {
+.green-button {
   border: 1px var(--feedback-block-color) solid;   
   color: var(--feedback-block-color);
-  margin-top: 10px;
 }
 
-.form-button:hover {
+.green-button:hover {
   color: white;
   background-color: var(--feedback-block-color);
 }
@@ -200,36 +208,35 @@ body, a, select, input {
 }
 
 .footer-content {
-  width: 1000px;
   padding: 30px 0;
   color: white ;
   margin: auto;
 }
 
-.logo-company {
+.flex {
   display: flex;
 }
 
-.flex-space-between {
-  display: flex;
+.a-i-center {
   align-items: center;
+}
+
+.a-i-baseline {
+  align-items: baseline;
+}
+
+.j-c-space-between {
   justify-content: space-between;
 }
 
-.flex-column-all-center {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.j-c-space-around {
+  justify-content: space-around;
+}
+
+.j-c-center {
   justify-content: center;
 }
 
-.flex-align-items-center {
-  display: flex;
-  align-items: center;
-}
-
-.flex-space-around {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+.f-d-column {
+  flex-direction: column;
 }
