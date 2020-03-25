@@ -24,7 +24,7 @@ body, a, select, input {
 }
 
 .header-main {
-  padding: 5px 5px;
+  padding: 5px 20px;
   box-sizing: border-box;
   position: fixed;
   top: 0;
@@ -32,19 +32,10 @@ body, a, select, input {
   background-color: white;
   width: 100%;
   height: var(--header-height);
-}
-
-.logo-title {
   font-weight: bold;
-  padding-left: 15px;
 }
 
-.menu {
-  font-weight: bold;
-  padding-right: 20px;
-}
-
-.menu-link {
+.header-main-link {
   font-weight: bold;
   color: black;
   margin: 0 10px; 
@@ -76,7 +67,7 @@ body, a, select, input {
   width: 100px;
 }
 
-.advertising-section-title {
+h1 {
   margin: 5px 0 0 0;
   font-size: 48px;
 }
@@ -92,12 +83,12 @@ body, a, select, input {
   cursor: pointer;
   font-weight: bold;
   margin-top: 10px;
+  font-size: 20px;
 }
 
 .white-button {
   border: 1px white solid;
   color: white;
-  font-size: 20px;
 }
 
 .white-button:hover {
@@ -106,22 +97,16 @@ body, a, select, input {
   color: black;
 }
 
-.features-section {
-  padding: 50px 0;
-  
-  margin: 0 auto;
-}
-
 .width-250 {
   width: 250px;
 }
 
-.info-feedback-background-color {
+.bg-gray {
   background-color: var(--info-feedback-background-color);
 }
 
-.info-section, .places-to-rest-section {
-  padding: 50px 50px;
+.container {
+  padding: 50px 0;
   margin: 0 auto;
 }
 
@@ -132,10 +117,6 @@ body, a, select, input {
 .moon {
   width: 350px;
   height: 200px;
-}
-
-.feedback-block {
-  padding: 50px 0;
 }
 
 .feedback-block-form {
@@ -203,7 +184,7 @@ body, a, select, input {
   padding: 0 40px 10px 10px;
 }
 
-.background-blue {
+.bg-dark {
   background-color: var(--footer-background-color);
 }
 
@@ -213,30 +194,30 @@ body, a, select, input {
   margin: auto;
 }
 
-.flex {
+.display-flex {
   display: flex;
 }
 
-.a-i-center {
+.align-items-center {
   align-items: center;
 }
 
-.a-i-baseline {
+.align-items-baseline {
   align-items: baseline;
 }
 
-.j-c-space-between {
+.justify-content-space-between {
   justify-content: space-between;
 }
 
-.j-c-space-around {
+.justify-content-space-around {
   justify-content: space-around;
 }
 
-.j-c-center {
+.justify-content-center {
   justify-content: center;
 }
 
-.f-d-column {
+.flex-direction-column {
   flex-direction: column;
 }

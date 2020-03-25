@@ -11,29 +11,29 @@
 </head>
 
 <body>
-    <header class="header-main flex a-i-center j-c-space-between">
-        <div class="logo-title flex a-i-center">
+    <header class="header-main display-flex align-items-center justify-content-space-between">
+        <div class="display-flex align-items-center">
             <img src="images/logo.svg" alt="logo" class="logo-header">
             <p>Лунное море</p>
         </div>
-        <nav class="menu flex a-i-center">
-            <a href="#features-section" class="menu-link">Преимущества</a>
-            <a href="#about-info" class="menu-link">О ЖК</a>
-            <a href="#rest-info" class="menu-link">Места для отдыха</a>
+        <nav class="display-flex align-items-center">
+            <a href="#features-section" class="header-main-link">Преимущества</a>
+            <a href="#about-info" class="header-main-link">О ЖК</a>
+            <a href="#rest-info" class="header-main-link">Места для отдыха</a>
         </nav>
     </header>
 
     <main class="padding-top-h-h">
-        <div class="advertising-section flex f-d-column a-i-center">
-            <div class="width-1000 flex f-d-column a-i-center">
+        <div class="advertising-section display-flex flex-direction-column align-items-center">
+            <div class="width-1000 display-flex flex-direction-column align-items-center">
                 <img src="images/logo.svg" alt="logo-advertising-section" class="width-100">
-                <h1 class="advertising-section-title">ЖК «Лунное море»</h1>
+                <h1>ЖК «Лунное море»</h1>
                 <p class="margin-0">Место, откуда не хочется улетать</p>
                 <a class="button white-button" href="#form">Забронировать</a>
             </div>
         </div>
         <section id="features-section">
-            <div class="features-section flex j-c-space-around baseline width-1000">
+            <div class="container display-flex justify-content-space-around baseline width-1000">
                 <div class="width-250">
                     <h2>Уникальный вид</h2>
                     <p>
@@ -58,8 +58,8 @@
                 </div>
             </div>
         </section>
-        <section class="info-feedback-background-color">
-            <div class="info-section flex a-i-center j-c-space-around width-1000">
+        <section class="bg-gray">
+            <div class="container display-flex align-items-center justify-content-space-around width-1000">
                 <div class="width-450" id="about-info">
                     <h2>О ЖК «Лунное море»</h2>
                     <p>
@@ -77,7 +77,7 @@
                 </div>
             </div>
         </section>
-        <section class="places-to-rest-section flex a-i-center j-c-space-around width-1000">
+        <section class="container display-flex align-items-center justify-content-space-around width-1000">
             <div>
                 <img src="images/moon-2.jpg" alt="moon2" class="moon">
             </div>
@@ -94,52 +94,58 @@
                 </p>
             </div>
         </section>
-        <div class="feedback-block flex f-d-column a-i-center j-c-center info-feedback-background-color">
-            <h2>Оставьте заявку сегодня!</h2>
-            <form action="#" method="GET" id="form" class="feedback-block-form">
-                <fieldset class="feedback-flat-form">
-                    <legend class="feedback-form-title">Параметры квартиры</legend>
-                    <div class="feedback-qty-rooms flex a-i-center j-c-space-between">
-                        <label>Количество комнат:</label>
-                        <select name="feedback-qty-rooms" size="1">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                        </select>
-                    </div>
-                    <div class="feedback-repairs flex a-i-center j-c-space-between">
-                        <label>Отделка:</label>
-                        <select name="feedback-repairs" size="1">
-                            <option value="without-repairs">Без отделки</option>
-                            <option value="econom">Эконом</option>
-                            <option value="comfort">Комфорт</option>
-                            <option value="business">Бизнес</option>
-                        </select>
-                    </div>
-                </fieldset>
-                <fieldset class="feedback-contact-info">
-                    <legend class="feedback-form-title">Контактная информация</legend>
-                    <div class="feedback-contact-info-name flex a-i-center j-c-space-between">
-                        <label for="name">Имя:</label>
-                        <input type="text" name="name" id="name" required>
-                    </div>
-                    <div class="feedback-contact-info-tel flex a-i-center j-c-space-between">
-                        <label for="tel">Телефон:</label>
-                        <input type="tel" name="tel" id="tel" required pattern="+7-[0-9]-[0-9]">
-                    </div>
-                    <div class="feedback-contact-info-email flex a-i-center j-c-space-between">
-                        <label for="e-mail">E-mail</label>
-                        <input type="email" name="e-mail" id="e-mail">
-                    </div>
-                </fieldset>
-                <input type="submit" value="Отправить" class="button green-button">
-            </form>
-        </div>
+        <section class="bg-gray">
+            <div
+                class="container display-flex flex-direction-column align-items-center justify-content-center width-1000">
+                <h2>Оставьте заявку сегодня!</h2>
+                <form action="#" method="GET" id="form" class="feedback-block-form">
+                    <fieldset class="feedback-flat-form">
+                        <legend class="feedback-form-title">Параметры квартиры</legend>
+                        <div class="feedback-qty-rooms display-flex align-items-center justify-content-space-between">
+                            <label>Количество комнат:</label>
+                            <select name="feedback-qty-rooms" size="1">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>
+                        <div class="feedback-repairs display-flex align-items-center justify-content-space-between">
+                            <label>Отделка:</label>
+                            <select name="feedback-repairs" size="1">
+                                <option value="without-repairs">Без отделки</option>
+                                <option value="econom">Эконом</option>
+                                <option value="comfort">Комфорт</option>
+                                <option value="business">Бизнес</option>
+                            </select>
+                        </div>
+                    </fieldset>
+                    <fieldset class="feedback-contact-info">
+                        <legend class="feedback-form-title">Контактная информация</legend>
+                        <div
+                            class="feedback-contact-info-name display-flex align-items-center justify-content-space-between">
+                            <label for="name">Имя:</label>
+                            <input type="text" name="name" id="name" required>
+                        </div>
+                        <div
+                            class="feedback-contact-info-tel display-flex align-items-center justify-content-space-between">
+                            <label for="tel">Телефон:</label>
+                            <input type="tel" name="tel" id="tel" required pattern="+7-[0-9]-[0-9]">
+                        </div>
+                        <div
+                            class="feedback-contact-info-email display-flex align-items-center justify-content-space-between">
+                            <label for="e-mail">E-mail</label>
+                            <input type="email" name="e-mail" id="e-mail">
+                        </div>
+                    </fieldset>
+                    <input type="submit" value="Отправить" class="button green-button">
+                </form>
+            </div>
+        </section>
     </main>
-    <footer class="background-blue">
-        <div class="footer-content flex a-i-center j-c-space-around width-1000">
+    <footer class="bg-dark">
+        <div class="footer-content display-flex align-items-center justify-content-space-around width-1000">
             <div>
-                <div class="flex">
+                <div class="display-flex">
                     <img src="images/logo.svg" alt="logo" class="logo-header">
                     <p>Лунное море</p>
                 </div>
